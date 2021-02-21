@@ -80,6 +80,7 @@ class Tateti(QDialog):
         if 1 <= ganador <= 2: # evaluo si el ganador es el 1 o el 2
             msgbox.setWindowTitle("Ganador!") # le añado un título a la ventana
             msgbox.setText(f"El ganador es el jugador número: {ganador}") # le añado un texto a la ventana
+            self.contador = 0
         else:
             msgbox.setWindowTitle("Empate") # le añado un título a la ventana
             msgbox.setText("Ninguno ganó la ronda") # le añado un texto a la ventana
